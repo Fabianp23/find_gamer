@@ -1,0 +1,30 @@
+<%= form_for @post do |n| %>
+  <p><%= n.label :console %><br>
+    <%= n.text_field :console %>
+  </p>
+
+  <p><%= n.label :gamertag %><br>
+    <%= n.text_field :gamertag %>
+  </p>
+
+  <p><%= n.label :game %><br>
+    <%= n.text_field :game %>
+  </p>
+
+  <p><%= n.label :description %><br>
+    <%= n.text_area :description %>
+  </p>
+
+  <p><%= n.label :language %><br>
+    <%= n.text_field :language %>
+  </p>
+
+  <p><%= n.label :microphone %><br>
+    <%= n.text_field :microphone %>
+  </p>
+
+<p>
+  <%= n.submit %>
+</p>
+
+<% end %>
