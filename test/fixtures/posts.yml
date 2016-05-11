@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  gamertag: MyString
+  game: MyString
+  description: MyText
+  language: MyString
+  microphone: false
+
+two:
+  name: MyString
+  gamertag: MyString
+  game: MyString
+  description: MyText
+  language: MyString
+  microphone: false
