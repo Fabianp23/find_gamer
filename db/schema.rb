@@ -11,10 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160511225142) do
+ActiveRecord::Schema.define(version: 20160512233016) do
 
   create_table "posts", force: :cascade do |t|
-    t.string   "name"
     t.string   "gamertag"
     t.string   "game"
     t.text     "description"
