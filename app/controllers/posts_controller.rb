@@ -15,7 +15,6 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.create(post_params)
-    post_params[:microphone] == "1" ? @post.microphone = true : @post.microphone = false
     if @post.save
       redirect_to root_path
     else

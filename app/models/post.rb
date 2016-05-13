@@ -5,6 +5,6 @@ class Post < ActiveRecord::Base
   validates :game, presence: true
   validates :description, presence: true
   validates :language, presence: true
-  # validates :microphone, presence: true
-  
+  validates :microphone, inclusion: [true, false]
+
 end
