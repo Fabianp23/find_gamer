@@ -15,12 +15,17 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.create(post_params)
-    redirect_to @post
+    post_params[:microphone] == "1" ? @post.microphone = true : @post.microphone = false
+    if @post.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
-private
+  private
   def post_params
-    params.require(:post).permit(:console, :gamertag, :game, :description, :language, :mic)
+    params.require(:post).permit(:console, :gamertag, :game, :description, :language, :microphone)
   end
 
 end

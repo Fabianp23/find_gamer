@@ -1,4 +1,10 @@
-<%= form_for(@post, remote: true) do |f| %>
+<% if @post.errors.any? %>
+  <% @post.errors.full_messages.each do |message| %>
+    <p><%= message %></p>
+  <% end %>
+<% end %>
+
+<%= form_for(@post) do |f| %>
 
   <p><%= f.label :console %><br>
     <%= f.text_field :console %>
@@ -16,7 +22,8 @@
     <%= f.text_field :language %>
   </p>
   <p><%= f.label :microphone %><br>
-    <%= f.text_field :microphone %>
+    <%# f.text_field :microphone %>
+    <%= f.check_box :microphone %>
   </p>
   <p>
   <%= f.submit %>
