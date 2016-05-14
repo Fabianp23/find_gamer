@@ -14,14 +14,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
-$(document).on("ready", ready);
-
-  function ready() {
-    $('#new_post').on('ajax:success', newPost);
-
-  function newPost() {
-    window.location.reload();
-  }
-
-}

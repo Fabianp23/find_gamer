@@ -1,13 +1,7 @@
-<%= render 'form' %>
+<div id="new-form">
+  <%= render 'form' %>
+</div>
 
-<% @posts.each do |p| %>
-  <tr>
-    <td><%= p.console %></td>
-    <td><%= p.gamertag %></td>
-    <td><%= p.game %></td>
-    <td><%= p.description %></td>
-    <td><%= p.language %></td>
-    <td><%= p.microphone %></td>
-  </tr>
-  <br>
-<% end %>
+<div id="all-posts">
+  <%= render 'post' %>
+</div>

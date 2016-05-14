@@ -15,10 +15,12 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.create(post_params)
-    if @post.save
-      redirect_to root_path
-    else
-      render :new
+    respond_to do |format|
+      if @post.save
+          format.js { }
+      else
+        render :new
+      end
     end
   end
 
