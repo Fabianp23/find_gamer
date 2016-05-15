@@ -1,13 +1,14 @@
-<div id="new-post">
-
-  <p><% @posts.each do |post| %></p>
-    <p><%= post.console %><p>
-    <p><%= post.gamertag %></p>
-    <p><%= post.game %></p>
-    <p><%= post.description %></p>
-    <p><%= post.language %></p>
-    <p><%= post.microphone %></p>
-  <% end %>
-
-
-</div>
+<% @posts.each do |post| %>
+  <div id='post-left'>
+    <div id='gamertag'><%= post.gamertag %></div>
+    <div id='langugae'><%= post.language %></div>
+    <div id='microphone'><%= post.microphone %></div>
+  </div>
+  <div id='post-middle'>
+    <div id='game'><%= post.game %></div>
+    <div id='description'><%= post.description %></div>
+  </div>
+  <div id='cons'>
+    <div id='console'><%= @post.console %></div>
+  </div>
+<% end %>
