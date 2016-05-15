@@ -16,11 +16,18 @@
 //= require_tree .
 
 $(document).ready(function(){
-  clear();
+  clearInput();
+  highlightInputBox();
 
-  function clear(){
+  function clearInput(){
     $('#language-button :input').on('click', function() {
       $(this).val("");
+    });
+  };
+
+  function highlightInputBox() {
+    $('#new-form :input').on('click', function() {
+      $(this).css('border', 'solid 1px #C62030');
     });
   };
 
