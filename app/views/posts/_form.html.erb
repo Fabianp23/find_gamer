@@ -31,12 +31,6 @@
   <%= f.check_box :microphone %>
   <br>
 
-  <%= f.submit %>
+  <%= f.submit "Post" %>
 
-<% end %>
-
-<% if @post.errors.full_messages.any? %>
-  <%= @post.errors.full_messages.each do |message| %>
-    <p><%= message %></p>
-  <% end %>
 <% end %>

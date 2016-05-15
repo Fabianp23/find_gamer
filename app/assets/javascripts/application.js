@@ -14,21 +14,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
-$(document).ready(function(){
-  clearInput();
-  highlightInputBox();
-
-  function clearInput(){
-    $('#language-button :input').on('click', function() {
-      $(this).val("");
-    });
-  };
-
-  function highlightInputBox() {
-    $('#new-form :input').on('click', function() {
-      $(this).css('border', 'solid 1px #C62030');
-    });
-  };
-
-});
