@@ -14,3 +14,14 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+  clear();
+
+  function clear(){
+    $('#language-button :input').on('click', function() {
+      $(this).val("");
+    });
+  };
+
+});
