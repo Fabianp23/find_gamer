@@ -14,6 +14,7 @@ class PostsController < ApplicationController
   end
 
   def create
+    @response = HTTParty.get("https://www.igdb.com/api/v1/games/search/?q=#{params["game"]}")
     @post = Post.create(post_params)
     respond_to do |format|
       if @post.save
