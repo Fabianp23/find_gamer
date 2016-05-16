@@ -47,12 +47,17 @@
     opacity: .25;
   }
 
+  #wrapper {
+    margin-left: 12.5%;
+    width: 36%;
+  }
+
   .new-form {
     margin-top: 10px;
     /*background-color: #E5E5E5;*/
     background-color: white;
     min-width: 15%;
-    margin-left: 12.5%;
+    /*margin-left: 12.5%;*/
     padding: 20px;
     color: #C62030;
     color: black;
@@ -60,6 +65,7 @@
     /*border: solid 1px #B7B7B7;*/
     float: left;
     position: fixed;
+    /*margin-right: 20px;*/
   }
 
   .form-lines {
@@ -130,7 +136,7 @@
   }
 
   #divider2 {
-  /*float: left;*/
+  float: left;
   width: 1px;
   height: 565px ;
   background-color: rgb(186, 1, 33);
@@ -140,12 +146,13 @@
   margin-bottom: 0;
   margin-right: 50px;
   position: fixed;
-  margin-left: 33%;
+  margin-left: 300px;
   }
 
   .all-posts {
+    /*float: left;*/
     margin-top: 35px;
-    margin-left: 35.5%;
+    margin-left: 525px;
   }
 
  }
