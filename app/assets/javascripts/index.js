@@ -1,30 +1,24 @@
 $(document).ready(function(){
-  clearInput();
   highlightInputBox();
 
+  $('#language-button :input').on('click', clearInput);
+
   function clearInput(){
-    $('#language-button :input').on('click', function() {
-      $(this).val("");
-    });
+    $('#language-button :input').val("");
   };
 
   function highlightInputBox() {
     $('.new-form :input').on('click', function() {
       $(this).css('border', 'solid 1px #C62030');
     });
-  }
+  };
 
-  // function validateForm() {
-  // $('#new-form').validate({
-  //   debug: true,
-  //     rules: {
-  //       "post[console]": {required: true},
-  //       "post[gamertag]": {required: true, maxlength: 16},
-  //       "post[game]": {required: true, maxlength: 20},
-  //       "post[description]": {required: true, maxlength: 200},
-  //       "post[language]": {required: true, maxlength: 20}
-  //     }
-  //   });
-  // };
+  $('.new_post input, .new_post textarea, .new_post select').on('blur', function(){
+    $(this).css('border', 'solid 1px #C62030');
+  });
+
+  $('.new_post').on('ajax:success', function(){
+    $('.new_post input, .new_post textarea, .new_post select').val("");
+  });
 
 });

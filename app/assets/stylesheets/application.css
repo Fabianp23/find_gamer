@@ -56,9 +56,10 @@
     padding: 20px;
     color: #C62030;
     color: black;
-    /*box-shadow: 0px 0px 1px 1px #B7B7B7;*/
-    border: solid 1px #B7B7B7;
+    box-shadow: 0px 0px 1px 1px #B7B7B7;
+    /*border: solid 1px #B7B7B7;*/
     float: left;
+    position: fixed;
   }
 
   .form-lines {
@@ -69,10 +70,11 @@
 
   .form-lines select {
     border: none;
-    width: 200px;
+    width: 202px;
     height: 20px;
     margin-bottom: 15px;
     border: 1px solid #2D2D2D;
+    background-color: white;
   }
 
   .form-lines input {
@@ -85,7 +87,7 @@
     height: 20px;
     font-size: 12px;
     margin-bottom: 15px;
-    background-color: #ECECEC;
+    background-color: white;
   }
 
   .form-lines textarea {
@@ -97,6 +99,7 @@
     font-size: 12px;
     margin-bottom: 15px;
     border: 1px solid #2D2D2D;
+    background-color: white;
   }
 
   .form-lines label {
@@ -127,12 +130,22 @@
   }
 
   #divider2 {
-  float: left;
+  /*float: left;*/
   width: 1px;
-  height: 560px ;
+  height: 565px ;
   background-color: rgb(186, 1, 33);
   /*opacity: 0.3;*/
-  margin: 0 50px 0 50px;
+  /*margin: 0 50px 0 50px;*/
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 50px;
+  position: fixed;
+  margin-left: 33%;
+  }
+
+  .all-posts {
+    margin-top: 35px;
+    margin-left: 35.5%;
   }
 
  }
