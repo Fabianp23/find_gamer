@@ -9,7 +9,7 @@ $(document).ready(function(){
   };
 
   function highlightInputBox() {
-    $('#new-form :input').on('click', function() {
+    $('.new-form :input').on('click', function() {
       $(this).css('border', 'solid 1px #C62030');
     });
   }
