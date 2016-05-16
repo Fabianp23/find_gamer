@@ -49,14 +49,15 @@
 
   .new-form {
     margin-top: 10px;
-    background-color: #E5E5E5;
+    /*background-color: #E5E5E5;*/
+    background-color: white;
     min-width: 15%;
     margin-left: 12.5%;
     padding: 20px;
     color: #C62030;
     color: black;
-    box-shadow: 0px 0px 1px 1px #B7B7B7;
-    /*border: solid 1px #B7B7B7;*/
+    /*box-shadow: 0px 0px 1px 1px #B7B7B7;*/
+    border: solid 1px #B7B7B7;
     float: left;
   }
 
@@ -68,9 +69,10 @@
 
   .form-lines select {
     border: none;
-    width: 155px;
+    width: 200px;
     height: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #2D2D2D;
   }
 
   .form-lines input {
@@ -78,20 +80,23 @@
     font-family: 'Muli', sans-serif;
     font-weight: 300;
     border-radius: 3px;
-    width: 155px;
+    border: 1px solid #2D2D2D;
+    width: 200px;
     height: 20px;
     font-size: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    background-color: #ECECEC;
   }
 
   .form-lines textarea {
     border: none;
     font-family: 'Muli', sans-serif;
     border-radius: 3px;
-    width: 155px;
+    width: 200px;
     height: 75px;
     font-size: 12px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #2D2D2D;
   }
 
   .form-lines label {
@@ -124,9 +129,9 @@
   #divider2 {
   float: left;
   width: 1px;
-  height: 525px ;
+  height: 560px ;
   background-color: rgb(186, 1, 33);
-  opacity: 0.3;
+  /*opacity: 0.3;*/
   margin: 0 50px 0 50px;
   }
 
