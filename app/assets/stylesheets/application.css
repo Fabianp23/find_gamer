@@ -80,6 +80,15 @@
     font-family: 'Muli', sans-serif;
   }
 
+  #divider2 {
+  float: left;
+  width: 1px;
+  height: 462px ;
+  background-color: rgb(186, 1, 33);
+  opacity: 0.3;
+  margin: 0 50px 0 50px;
+  }
+
  }
 
 
