@@ -18,7 +18,14 @@ class PostsController < ApplicationController
   end
 
   def create
-
+    @post = Post.create(post_params)
+      if request.xhr?
+        if @post.valid?
+          render '_post', layout: false, locals: { post: @post }
+        else
+          render json: @post.errors, status: :unprocessable_entity
+     end
+   end
   end
 
   private
