@@ -10,9 +10,13 @@ module PostsHelper
 
   def console_img(post)
     if post.console == "Xbox One" || post.console == "Xbox 360"
-      image_tag "xbox_msg.png"
+      link_to "https://account.xbox.com/en-US/Messages?gamerTag=#{post.gamertag}" , :target => '_blank' do
+        image_tag "xbox_msg.png"
+      end
     else
-      image_tag "psn_profile.png"
+      link_to "https://my.playstation.com/#{post.gamertag}" , :target => '_blank' do
+        image_tag "psn_profile.png"
+        end
      end
   end
 
