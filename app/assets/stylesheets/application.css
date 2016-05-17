@@ -52,7 +52,7 @@
     /*box-shadow: 0px 0px 1px 1px #B7B7B7;*/
     /*border: solid 1px #B7B7B7;*/
     float: left;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     position: fixed;
     font-size: 12px;
   }
@@ -70,13 +70,15 @@
     margin-bottom: 15px;
     border: 1px solid #2D2D2D;
     background-color: white;
+    border-radius: 0;
+    -webkit-appearance: none;
   }
 
   .form-lines input {
     border: none;
     font-family: 'Muli', sans-serif;
     font-weight: 300;
-    border-radius: 3px;
+    /*border-radius: 3px;*/
     border: 1px solid #2D2D2D;
     width: 200px;
     height: 20px;
@@ -88,7 +90,7 @@
   .form-lines textarea {
     border: none;
     font-family: 'Muli', sans-serif;
-    border-radius: 3px;
+    /*border-radius: 3px;*/
     width: 200px;
     height: 75px;
     font-size: 12px;
