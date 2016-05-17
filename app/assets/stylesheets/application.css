@@ -25,8 +25,8 @@
 
    #nav {
      width: 100%;
-     padding-top: 20px;
-     padding-bottom: 20px;
+     padding-top: 10px;
+     padding-bottom: 10px;
      text-align: center;
      align-items: center;
      background-color: #2D2D2D;
@@ -34,38 +34,27 @@
      font-weight: 700;
      color: #C62030;
      font-size: 2em;
+     margin-bottom: 35px;
    }
-
-  #divider {
-    align-items: center;
-    width: 75%;
-    margin: 30px auto 30px auto;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: white;
-    /*border-bottom-color: #C62030;*/
-    opacity: .25;
-  }
 
   #wrapper {
     margin-left: 12.5%;
-    width: 36%;
+    margin-right: 12.5%;
   }
 
   .new-form {
-    margin-top: 10px;
-    /*background-color: #E5E5E5;*/
     background-color: white;
     min-width: 15%;
-    /*margin-left: 12.5%;*/
     padding: 20px;
     color: #C62030;
     color: black;
-    box-shadow: 0px 0px 1px 1px #B7B7B7;
+    margin-top: -20px;
+    /*box-shadow: 0px 0px 1px 1px #B7B7B7;*/
     /*border: solid 1px #B7B7B7;*/
     float: left;
+    border-radius: 5px;
     position: fixed;
-    /*margin-right: 20px;*/
+    font-size: 12px;
   }
 
   .form-lines {
@@ -109,7 +98,6 @@
   }
 
   .form-lines label {
-    /*padding-bottom: 10px;*/
     display: inline-block;
   }
 
@@ -136,49 +124,77 @@
   }
 
   #divider2 {
-  float: left;
-  width: 1px;
-  height: 565px ;
-  background-color: rgb(186, 1, 33);
-  /*opacity: 0.3;*/
-  /*margin: 0 50px 0 50px;*/
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: 50px;
   position: fixed;
-  margin-left: 300px;
+  width: 1px;
+  height: 450px ;
+  background-color: #2D2D2D;
+  opacity: .75;
+  margin-top: 10px;
+  margin-bottom: 0;
+  position: fixed;
+  margin-left: 265px;
   }
 
   .all-posts {
-    /*float: left;*/
-    margin-top: 35px;
-    margin-left: 525px;
+    margin-left: 320px;
+  }
+
+  .new-post {
+    color: black;
+    height: 100px;
+    margin-top: 25px;
+    margin-bottom: -10px;
+    font-size: 12px;
+  }
+
+  .all-posts .new-post {
+    border-bottom: solid 1px #2D2D2D;
+  }
+
+  #post-left {
+  float: left;
+  width: 125px;
+  height: 100%;
+  margin-right: 0px;
+  }
+
+  #post-left div {
+    padding: 10px 0px 0px 10px;
+  }
+
+  #post-left div img {
+    height: 30px;
+    width: 30px;
+  }
+
+  #post-middle {
+    padding-left: 0px;
+    float: left;
+    width: 200px;
+    height: 100%;
+  }
+
+  #post-middle div {
+    padding: 10px 0px 0px 0px;
+  }
+
+  #post-middle p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    word-wrap: break-word;
+  }
+
+  #cons {
+    float: right;
+    height: 100%;
+  }
+
+  #cons div img {
+    margin-top: 15px;
+    height: 50px;
+    width: 50px;
   }
 
  }
-
-
-
-
-
-
- /*#form-description {
-   border: none;
-   margin-bottom: 10px;
- }
-
- .form-lines input {
-   border: none;
- }
-
- .form-lines {
-   margin: 0px;
- }
-
- .submit-button {
-   background-color: #2D2D2D;
-   color: #E5E5E5;
-   border: none;
-   text-decoration: none;
-   padding: 7px;
- }*/

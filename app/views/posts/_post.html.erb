@@ -1,4 +1,4 @@
-<% @posts.reverse.each do |post| %>
+<div class="new-post">
   <div id='post-left'>
     <div id='gamertag'><%= post.gamertag %></div>
     <div id='langugae'><%= post.language %></div>
@@ -6,9 +6,9 @@
   </div>
   <div id='post-middle'>
     <div id='game'><%= post.game %></div>
-    <div id='description'><%= post.description %></div>
+    <div id='description'><p><%= post.description %></p></div>
   </div>
   <div id='cons'>
     <div id='console'><%= console_img post %></div>
   </div><br>
-<% end %>
+</div>
