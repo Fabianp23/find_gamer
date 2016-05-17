@@ -34,17 +34,8 @@
      font-weight: 700;
      color: #C62030;
      font-size: 2em;
+     margin-bottom: 35px;
    }
-
-  /*#divider {
-    align-items: center;
-    width: 75%;
-    margin: 30px auto 30px auto;
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: white;
-    border-bottom-color: #C62030;
-  }*/
 
   #wrapper {
     margin-left: 12.5%;
