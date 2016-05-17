@@ -1,5 +1,6 @@
 <%= form_for @post, :remote => true do |f| %>
 <div class="form-lines">
+  <p>Post Activity</p>
   <%= f.label :console %>
     <br>
     <%= f.select :console, [[nil],['Xbox One'],['PlayStation 4'],['Xbox 360'],['PlayStation3']], :selected => nil %>
