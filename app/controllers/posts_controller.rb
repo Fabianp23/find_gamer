@@ -18,28 +18,7 @@ class PostsController < ApplicationController
   end
 
   def create
-<<<<<<< HEAD
-    @response = HTTParty.get("https://www.igdb.com/api/v1/games/search/?q=#{params["game"]}")
-    @post = Post.create(post_params)
-    respond_to do |format|
-      if @post.save
-          format.js {}
-      else
-        render :new
-      end
-=======
-    @post = Post.create!(post_params)
-    # respond_to do |format|
-    #   if @post.save
-    #       format.js {}
-    #   else
-    #     render :new
-    #   end
-    # end
-    if request.xhr?
-      render '_post', layout: false, locals: { post: @post }
->>>>>>> 408c8b78e19bd4bc40e71732101d2c14b8221a8d
-    end
+
   end
 
   private
