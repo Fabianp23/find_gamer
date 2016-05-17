@@ -2,14 +2,14 @@ $(".all-posts").prepend("<div id='new-posts'>" +
   "<div id='post-left'>" +
   "<div id='gamertag'><%= @post.gamertag %></div>" +
   "<div id='langugae'><%= @post.language %></div>" +
-  "<div id='microphone'><%= @post.microphone %></div>" +
+  "<div id='microphone'><%= headset_img post %></div>" +
   "</div>" +
   "<div id='post-middle'>" +
   "<div id='game'><%= @post.game %></div>" +
   "<div id='description'><%= @post.description %></div>" +
   "</div>" +
   "<div id='cons'>" +
-  "<div id='console'><%= @post.console %></div>" +
+  "<div id='console'><%= console_img post %></div>" +
   "</div>" +
   "</div><br>"
 );

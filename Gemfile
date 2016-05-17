@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'httparty'
 gem 'openssl'
+
 gem 'json'
 gem 'hirb'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
