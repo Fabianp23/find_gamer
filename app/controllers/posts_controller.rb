@@ -2,8 +2,11 @@ class PostsController < ApplicationController
 
 
   def index
-    @posts = Post.all.limit(30)
+    @posts = Post.all.limit(25)
     @post = Post.new
+    if request.xhr?
+      render '_posts', layout: false
+    end
   end
 
   def show

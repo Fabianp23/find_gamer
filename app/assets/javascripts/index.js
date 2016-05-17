@@ -22,7 +22,16 @@ function ready() {
   $('.new_post').on('ajax:success', function(evt, postPartial){
     $('.new_post input[type=text], .new_post textarea, .new_post select').val("");
     $(".all-posts").prepend(postPartial);
-    console.log(arguments);
   });
 
+  function getAllPosts() {
+    return $.ajax({
+      url: 'posts',
+      success: function (div) {
+        $('.all-posts').html(div);
+      }
+    });
+  }
+
+  setInterval(getAllPosts, 3000);
 }
