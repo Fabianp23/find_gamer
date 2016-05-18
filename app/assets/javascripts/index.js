@@ -11,12 +11,12 @@ function ready() {
 
   function highlightInputBox() {
     $('.new-form :input').on('click', function() {
-      $(this).css('border', 'solid 1px #C62030');
+      $(this).css('border', 'solid 1px #F8AC00');
     });
   };
 
   $('.new_post input, .new_post textarea, .new_post select').on('blur', function(){
-    $(this).css('border', 'solid 1px #C62030');
+    $(this).css('border', 'solid 1px #F8AC00');
   });
 
   $('.new_post').on('ajax:success', function(evt, postPartial){
