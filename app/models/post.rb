@@ -14,7 +14,7 @@ class Post < ActiveRecord::Base
       if response["success"] == false
         errors.add(:gamertag, "is not valid")
       end
-    elsif self.console == "PlayStation 4" || self.console == "PlayStation3"
+    elsif self.console == "PlayStation 4" || self.console == "PlayStation 3"
       page = HTTParty.get("https://my.playstation.com/#{gamertag}")
       parse_page = Nokogiri::HTML(page)
       if  parse_page.css('.user-info h2').text == ""
