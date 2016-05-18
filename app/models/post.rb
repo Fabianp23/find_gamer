@@ -10,7 +10,7 @@ class Post < ActiveRecord::Base
 
   def gamertag_truth
     if self.console == "Xbox One" || self.console == "Xbox 360"
-      response = HTTParty.get("https://xboxapi.com/v2/xuid/#{gamertag}", headers: {"X-AUTH" => "5e01be3ebd93462725708476959178793fe02b2e"}).parsed_response
+      response = HTTParty.get("https://xboxapi.com/v2/xuid/#{gamertag}", headers: {"X-AUTH" => ENV["XBOX_TOKEN"]}).parsed_response
         if response["success"] == false
           errors.add(:gamertag, "is not valid")
         end
