@@ -1,5 +1,6 @@
 class Post < ActiveRecord::Base
-
+  belongs_to :game 
+  
   validates :console, presence: true
   validates :gamertag, presence: true
   validates :game, presence: true
