@@ -190,6 +190,7 @@
     background-color: white;
     border: none;
     height: 280px;
+    border-radius: 0px;
   }
 
   .chosen-results .active-result {
