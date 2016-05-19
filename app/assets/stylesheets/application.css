@@ -243,6 +243,7 @@
   }
 
   footer p {
+    position:bottom;
     background-color: white;
     width: 75%;
     height: 15px;
