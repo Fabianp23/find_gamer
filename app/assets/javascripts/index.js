@@ -30,20 +30,20 @@ function ready() {
      errors = xhr.responseJSON;
      var errorsArr = [];
      console.log(evt, xhr, status, errors)
-     if (errors.console) {
-       errorsArr.push("Console " + errors.console[0]);
-     }
-     if (errors.gamertag) {
-       errorsArr.push("Gamertag " + errors.gamertag[0]);
-     }
-     if (errors.game_id) {
-       errorsArr.push("Game " + errors.game_id[0]);
+     if (errors.language) {
+       errorsArr.push("Language " + errors.language[0]);
      }
      if (errors.description) {
        errorsArr.push("Description " + errors.description[0]);
      }
-     if (errors.language) {
-       errorsArr.push("Language " + errors.language[0]);
+     if (errors.game_id) {
+       errorsArr.push("Game " + errors.game_id[0]);
+     }
+     if (errors.gamertag) {
+       errorsArr.push("Gamertag " + errors.gamertag[0]);
+     }
+     if (errors.console) {
+       errorsArr.push("Console " + errors.console[0]);
      }
      errorsArr.forEach(addError);
   });
