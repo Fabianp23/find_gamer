@@ -29,26 +29,22 @@ function ready() {
     clearErrors();
      errors = xhr.responseJSON;
      var errorsArr = [];
-     if (errors.console)
-     {
+    //  console.log(evt, xhr, status, errors)
+     if (errors.console) {
        errorsArr.push("Console " + errors.console[0]);
-     };
-     if (errors.gamertag);
-     {
+     }
+     if (errors.gamertag) {
        errorsArr.push("Gamertag " + errors.gamertag[0]);
-     };
-     if (errors.game)
-     {
+     }
+     if (errors.game) {
        errorsArr.push("Game " + errors.game[0]);
-     };
-     if (errors.description)
-     {
+     }
+     if (errors.description) {
        errorsArr.push("Description " + errors.description[0]);
-     };
-     if (errors.language)
-     {
+     }
+     if (errors.language) {
        errorsArr.push("Language " + errors.language[0]);
-     };
+     }
      errorsArr.forEach(addError);
   });
 

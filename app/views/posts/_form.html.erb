@@ -13,7 +13,7 @@
 
     <%= f.label :game %>
     <br>
-    <%= f.text_field :game, maxlength: "50", size: "20" %>
+    <%= f.collection_select :game_id,  Game.all, :id ,:name %>
     <br>
 
     <%= f.label :description, "Activity Description" %>

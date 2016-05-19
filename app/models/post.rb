@@ -1,9 +1,9 @@
 class Post < ActiveRecord::Base
-  belongs_to :game 
-  
+  belongs_to :game
+
   validates :console, presence: true
   validates :gamertag, presence: true
-  validates :game, presence: true
+  # validates :game, presence: true
   validates :description, presence: true
   validates :language, presence: true
   validates :microphone, inclusion: [true, false]
