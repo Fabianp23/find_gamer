@@ -13,7 +13,7 @@
 
     <%= f.label :game %>
     <br>
-    <%= f.collection_select :game_id,  Game.all, :id ,:name %>
+    <%= f.select :game_id, Game.all, include_blank: true %>
     <br>
 
     <%= f.label :description, "Activity Description" %>

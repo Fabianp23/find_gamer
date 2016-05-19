@@ -35,12 +35,14 @@
      text-align: center;
      align-items: center;
      background-color: #2D2D2D;
+     /*background-color: white;*/
      font-family: 'Montserrat', sans-serif;
      font-weight: 700;
      /*color: #C62030;*/
      color: white;
      font-size: 2em;
      margin-bottom: 35px;
+     /*border-bottom: .01em solid rgba(0, 0, 0, .15);*/
      /*color: #F8AC00;*/
      /*color: #C62030;  */
      /*letter-spacing: 1px;*/
@@ -62,6 +64,7 @@
     text-decoration: none;
     list-style:none;
     color: #2D2D2D;
+    text-align: center;
   }
 
   .new-form {
@@ -147,6 +150,10 @@
     margin-bottom: 5px;
   }
 
+  #post_game_id {
+    height: 24px;
+  }
+
   #language-button label {
     margin-bottom: 5px;
   }
@@ -171,7 +178,7 @@
   #divider2 {
   position: fixed;
   width: 1px;
-  height: 505px ;
+  height: 503px ;
   background-color: #2D2D2D;
   opacity: .75;
   margin-top: 10px;
@@ -212,8 +219,12 @@
     width: 30px;
   }
 
+  #gamertag {
+    color: #F8AC00;
+  }
+
   #post-middle {
-    padding-left: 0px;
+    padding-left: 10px;
     float: left;
     width: 200px;
     height: 100%;
@@ -240,6 +251,15 @@
     margin-top: 15px;
     height: 50px;
     width: 57px;
+    align-items: center
+  }
+
+  #cons p {
+    font-size: 8px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    margin: 0px;
+    text-align: center;
   }
 
   footer p {
