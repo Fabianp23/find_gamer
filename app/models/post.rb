@@ -21,7 +21,7 @@ class Post < ActiveRecord::Base
       if  parse_page.css('.user-info h2').text == ""
         errors.add(:gamertag, "is not valid")
       end
-
     end
   end
+
 end

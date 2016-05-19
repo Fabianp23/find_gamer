@@ -1,12 +1,14 @@
 $(document).on("ready page:load", ready);
 
-function ready() {
-  highlightInputBox();
+  $(".chosen-choices").chosen();
 
-  $('#language-button :input').on('click', clearInput);
+  function ready() {
+    highlightInputBox();
 
-  function clearInput(){
-    $('#language-button :input').val("");
+    $('#language-button :input').on('click', clearInput);
+
+    function clearInput(){
+      $('#language-button :input').val("");
   };
 
   function highlightInputBox() {
@@ -29,7 +31,7 @@ function ready() {
     clearErrors();
      errors = xhr.responseJSON;
      var errorsArr = [];
-     console.log(evt, xhr, status, errors)
+    //  console.log(evt, xhr, status, errors)
      if (errors.language) {
        errorsArr.push("Language " + errors.language[0]);
      }
