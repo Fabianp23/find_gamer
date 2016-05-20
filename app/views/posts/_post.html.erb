@@ -1,6 +1,7 @@
 <div class="new-post">
   <div id='post-left'>
     <div id='gamertag'><%= post.gamertag %></div>
+    <div id='time-ago'><%= time_ago_in_words(post.created_at) %> ago</div>
     <div id='language'><%= post.language %></div>
     <div id='microphone'><%= headset_img post %></div>
   </div>
