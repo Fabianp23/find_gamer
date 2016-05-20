@@ -13,7 +13,7 @@
 
     <%= f.label :game %>
     <br>
-    <%= f.collection_select :game_id,  Game.all, :id ,:name %>
+    <%= f.collection_select :game_id,  Game.all, :id, :name, {include_blank: true}, {class: 'chosen-select', data: {placeholder: 'Choose a game'}} %>
     <br>
 
     <%= f.label :description, "Activity Description" %>

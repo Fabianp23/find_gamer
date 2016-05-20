@@ -1,0 +1,8 @@
+<%= @game.name %>
+
+<% @game.posts.each do |post| %>
+  <%= post.gamertag %>
+  <%= post.description %>
+  <%= post.language %>
+  <%= post.microphone %>
+<% end %>
