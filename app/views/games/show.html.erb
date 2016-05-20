@@ -1,8 +1,12 @@
-<%= @game.name %>
+<div id="wrapper">
 
-<% @game.posts.each do |post| %>
-  <%= post.gamertag %>
-  <%= post.description %>
-  <%= post.language %>
-  <%= post.microphone %>
-<% end %>
+  <div class="new-form">
+    <%# render 'form' %>
+  </div>
+
+  <div id="divider2"></div>
+    <div class="all-posts">
+      <%= render partial: 'posts/posts' %>
+    </div>
+
+</div>

@@ -16,7 +16,11 @@
 </head>
 <body>
 
-  <div id="nav"><%= image_tag 'textguiner_logo.png' %></div>
+  <div id="nav">
+    <%= link_to posts_path do %>
+      <%= image_tag 'textguiner_logo.png' %>
+    <% end %>
+  </div>
 
   <%= yield %>
 
