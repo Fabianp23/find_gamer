@@ -35,18 +35,11 @@
      text-align: center;
      align-items: center;
      background-color: #2D2D2D;
-     /*background-color: white;*/
      font-family: 'Montserrat', sans-serif;
      font-weight: 700;
-     /*color: #C62030;*/
      color: white;
      font-size: 2em;
      margin-bottom: 35px;
-     /*border-bottom: .01em solid rgba(0, 0, 0, .15);*/
-     /*color: #F8AC00;*/
-     /*color: #C62030;  */
-     /*letter-spacing: 1px;*/
-     /*position: fixed;*/
    }
 
    #nav img {
@@ -65,44 +58,39 @@
     list-style:none;
     color: #2D2D2D;
     color: red;
-    /*text-align: center;*/
   }
 
   .new-form {
-    /*background-color: white;*/
     min-width: 15%;
     padding: 20px;
-    /*color: #C62030;*/
     color: black;
     margin-top: -20px;
-    /*box-shadow: 0px 0px 1px 1px #B7B7B7;*/
-    /*border: solid 1px #B7B7B7;*/
     float: left;
-    /*border-radius: 5px;*/
     position: fixed;
     font-size: 12px;
+  }
+
+  #game-name {
+    font-size: 2em;
+    margin-top: 0px;
+    margin-left: 320px;
+    color: #F8AC00;
+    padding-left: 0px;
+    border-bottom: 2px solid black;
   }
 
   .form-lines {
     padding-top: 10px;
     padding-bottom: 10px;
-    /*padding-left: 5px;*/
   }
 
   .form-lines:first-of-type p {
     margin-top: 0px;
     font-size: 20px;
-    /*padding-left: 1px;*/
     color: #F8AC00;
-    /*border-bottom: 1px solid #2D2D2D;*/
     margin-bottom: 20px;
     padding: 5px;
     padding-left: 0px;
-    /*padding-top: 5px;
-    padding-bottom: 5px;*/
-    /*background-color: #2D2D2D;*/
-    /*color: white;*/
-    /*text-align: center;*/
     border-bottom: 1px solid rgba(0, 0, 0, .15);
     width: 200px;
   }
@@ -122,7 +110,6 @@
     border: none;
     font-family: 'Muli', sans-serif;
     font-weight: 300;
-    /*border-radius: 3px;*/
     border: 1px solid #2D2D2D;
     width: 198px;
     height: 20px;
@@ -134,7 +121,6 @@
   .form-lines textarea {
     border: none;
     font-family: 'Muli', sans-serif;
-    /*border-radius: 3px;*/
     width: 196px;
     height: 75px;
     font-size: 12px;
@@ -160,23 +146,23 @@
   }
 
   .chosen-container-single .chosen-single {
-      position: relative;
-      display: block;
-      overflow: hidden;
-      border: 1px solid #2D2D2D;
-      border-radius: 0px;
-      color: #2D2D2D;
-      background-color: white;
-      font-size: 12px;
-      height: 24px;
-      width: 200px;
-      box-shadow: none;
-      background: -webkit-gradient(linear,0% 0,0% 00%,color-stop(0%,#FFFFFF),color-stop(0%,#FFFFFF),color-stop(0%,##FFFFFF),color-stop(0%,##FFFFFF));
-      background: -webkit-linear-gradient(##FFFFFF 0%,##FFFFFF 0%,##FFFFFF 0%,#FFFFFF 0%);
-      background: -moz-linear-gradient(#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%);
-      background: -o-linear-gradient(#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%);
-      background: linear-gradient(#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%);
-      margin-bottom: 15px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border: 1px solid #2D2D2D;
+    border-radius: 0px;
+    color: #2D2D2D;
+    background-color: white;
+    font-size: 12px;
+    height: 24px;
+    width: 200px;
+    box-shadow: none;
+    background: -webkit-gradient(linear,0% 0,0% 00%,color-stop(0%,#FFFFFF),color-stop(0%,#FFFFFF),color-stop(0%,##FFFFFF),color-stop(0%,##FFFFFF));
+    background: -webkit-linear-gradient(##FFFFFF 0%,##FFFFFF 0%,##FFFFFF 0%,#FFFFFF 0%);
+    background: -moz-linear-gradient(#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%);
+    background: -o-linear-gradient(#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%);
+    background: linear-gradient(#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%);
+    margin-bottom: 15px;
   }
 
   .chosen-drop .chosen-results {
@@ -218,18 +204,20 @@
     color: #F8AC00;
     font-family: 'Montserrat', sans-serif;
     width: 200px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 1px .02em #F8AC00;
   }
 
   #divider2 {
-  position: fixed;
-  width: 1px;
-  height: 515px;
-  background-color: #2D2D2D;
-  opacity: .75;
-  margin-top: 10px;
-  margin-bottom: 0;
-  position: fixed;
-  margin-left: 280px;
+    position: fixed;
+    width: 1px;
+    height: 515px;
+    background-color: #2D2D2D;
+    opacity: .75;
+    margin-top: 10px;
+    margin-bottom: 0;
+    position: fixed;
+    margin-left: 280px;
   }
 
   .all-posts {
@@ -240,7 +228,7 @@
   .new-post {
     color: black;
     height: 120px;
-    margin-top: 25px;
+    margin-top: 20px;
     margin-bottom: -10px;
     font-size: 12px;
   }
@@ -250,10 +238,10 @@
   }
 
   #post-left {
-  float: left;
-  width: 125px;
-  height: 100%;
-  margin-right: 0px;
+    float: left;
+    width: 125px;
+    height: 100%;
+    margin-right: 0px;
   }
 
   #post-left div {
@@ -263,6 +251,29 @@
   #post-left div img {
     height: 30px;
     width: 30px;
+  }
+
+  .white-space {
+    height: 10px;
+  }
+
+  .searcher {
+    margin-left: 320px;
+    margin-bottom: -10px;
+    height: 20px;
+    background-color: #2D2D2D;
+    padding-top: 5px;
+    padding-left: 6px;
+    padding-bottom: 9px;
+    box-shadow: 0px 0px 1px .02em #F8AC00;
+    border-radius: 2px;
+  }
+
+  .searcher label {
+    display: none;
+  }
+
+  .searcher a {
   }
 
   #gamertag {

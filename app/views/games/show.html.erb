@@ -1,10 +1,12 @@
 <div id="wrapper">
 
   <div class="new-form">
-    <%# render 'form' %>
   </div>
 
   <div id="divider2"></div>
+  <div id="game-name">
+    <%= @game.name.upcase %>
+  </div>
     <div class="all-posts">
       <%= render partial: 'posts/posts' %>
     </div>
