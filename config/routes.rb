@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  resources :posts
   root "posts#index"
+  resources :posts
+  resources :games do
+    resources :posts
+  end
+  get 'games/show'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
