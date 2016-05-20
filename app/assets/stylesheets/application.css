@@ -234,11 +234,12 @@
 
   .all-posts {
     margin-left: 320px;
+    margin-bottom: 140px;
   }
 
   .new-post {
     color: black;
-    height: 100px;
+    height: 120px;
     margin-top: 25px;
     margin-bottom: -10px;
     font-size: 12px;
@@ -266,6 +267,19 @@
 
   #gamertag {
     color: #F8AC00;
+  }
+
+  div #time-ago {
+    margin: 0px;
+    padding-top: 2px;
+    padding-left: 10px;
+    font-size: 10px;
+    font-style: italic;
+    color: rgba(0, 0, 0, .50);
+  }
+
+  div #language {
+    padding-top: 2px;
   }
 
   #post-middle {
