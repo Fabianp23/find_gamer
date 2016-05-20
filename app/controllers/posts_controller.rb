@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
 
+
   def index
     @posts = Post.all.limit(25)
     @post = Post.new
@@ -9,6 +10,7 @@ class PostsController < ApplicationController
   end
 
   def show
+    #@posts = Post.all
     # @post = Post.find(params[:id])
     redirect_to posts_path
   end
@@ -19,8 +21,6 @@ class PostsController < ApplicationController
   end
 
   def create
-    # puts post_params.methods
-    # @post = Game.find(post_params[:game]).posts.build(post_params.delete(:game))
     @post = Post.create(post_params)
       if request.xhr?
         if @post.valid?
@@ -33,7 +33,7 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:console, :gamertag, :game_id, :description, :language, :microphone)
+    params.require(:post).permit(:console, :gamertag, :game, :description, :language, :microphone)
   end
 
 end
