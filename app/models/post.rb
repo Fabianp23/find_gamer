@@ -7,7 +7,7 @@ class Post < ActiveRecord::Base
   validates :description, presence: true
   validates :language, presence: true
   validates :microphone, inclusion: [true, false]
-  
+
 
   def gamertag_truth
     if self.console == "Xbox One" || self.console == "Xbox 360"

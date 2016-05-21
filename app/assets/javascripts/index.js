@@ -1,7 +1,5 @@
 $(document).on("ready page:load", ready);
 
-// $(".chosen-choices").chosen();
-
 function ready() {
   highlightInputBox();
 
@@ -78,6 +76,6 @@ $("#game_id").chosen().change( function(event, data){
 
   console.log(window.intervalId);
   if (window.intervalId === undefined) {
-    window.intervalId = setInterval(getAllPosts, 3000);
+    window.intervalId = setInterval(getAllPosts, 10000);
   }
 }
