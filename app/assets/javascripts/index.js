@@ -25,6 +25,10 @@ function ready() {
     $(".all-posts").prepend(postPartial);
   });
 
+  $('.new-post').click(function() {
+    $(this).effect("highlight", {color:"#669966"}, 1000);
+  });
+
   $('.new-form').on('ajax:error', function(evt, xhr, status, error){
     clearErrors();
     errors = xhr.responseJSON;
@@ -48,14 +52,14 @@ function ready() {
    errorsArr.forEach(addError);
  });
 
-    $("#game_id").chosen().change( function(event, data){
+  $("#game_id").chosen().change( function(event, data){
     window.location.href = "/games/" + data.selected;
-    });
+  });
 
 
-$("#game_id").chosen().change( function(event, data){
-   window.location.href = "/games/" + data.selected;
-   });
+  $("#game_id").chosen().change( function(event, data){
+    window.location.href = "/games/" + data.selected;
+  });
 
   function clearErrors(){
     $('.errors').remove();
@@ -69,13 +73,41 @@ $("#game_id").chosen().change( function(event, data){
     return $.ajax({
       url: 'posts',
       success: function (div) {
+        console.log(div);
         $('.all-posts').html(div);
+        highlightPost();
       }
     });
   }
+
+  function highlightPost() {
+    $(".new-post:first").effect("highlight", {color:"#2D2D2D"}, 1000);
+  };
 
   console.log(window.intervalId);
   if (window.intervalId === undefined) {
     window.intervalId = setInterval(getAllPosts, 10000);
   }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

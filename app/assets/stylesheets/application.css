@@ -239,6 +239,7 @@
     margin-top: 20px;
     margin-bottom: -10px;
     font-size: 12px;
+    /*background-color: green;*/
   }
 
   .all-posts .new-post {
@@ -281,7 +282,15 @@
     display: none;
   }
 
-  .searcher a {
+  .searcher .chosen-search {
+    width: 200px;
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+
+  .searcher .chosen-results {
+    width: 200px;
+    margin-right: 0px;
   }
 
   #gamertag {
