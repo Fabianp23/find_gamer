@@ -67,5 +67,8 @@ $(document).on("ready page:load", ready);
     });
   }
 
-  setInterval(getAllPosts, 3000);
+  console.log(window.intervalId);
+  if (window.intervalId === undefined) {
+    window.intervalId = setInterval(getAllPosts, 3000);
+  }
 }

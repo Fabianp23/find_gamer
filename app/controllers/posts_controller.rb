@@ -33,7 +33,7 @@ class PostsController < ApplicationController
 
   private
   def post_params
-    params.require(:post).permit(:console, :gamertag, :game, :description, :language, :microphone)
+    params.require(:post).permit(:console, :gamertag, :game_id, :description, :language, :microphone)
   end
 
 end
