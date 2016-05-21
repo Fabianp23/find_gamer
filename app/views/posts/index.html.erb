@@ -1,19 +1,19 @@
 <div id="wrapper">
-  <div class="new-form">
-    <%= render 'form' %>
-  </div>
-  <div id="divider2"></div>
+ <div class="new-form">
+   <%= render 'form' %>
+ </div>
+ <div id="divider2"></div>
 
-  <div class="white-space"></div>
-  <div class="searcher">
-    <%= form_for @post, :remote => true do |f| %>
-      <%= f.label :game, '' %>
-      <%= f.collection_select :game_id,  Game.all, :id, :name, {include_blank: true}, {class: 'chosen-select', data: {placeholder: 'Choose a game'}} %>
-      <%= link_to 'filter' %>
-    <% end %>
-  </div>
+ <div class="white-space"></div>
+ <div class="searcher">
 
-  <div class="all-posts">
-    <%= render 'posts' %>
-  </div>
+     <%= label_tag :game, '' %>
+     <%= collection_select :game,  :id, Game.all, :id, :name, {include_blank: true}, {class: 'chosen-select', data: {placeholder: 'Choose a game'}} %>
+
+
+ </div>
+
+ <div class="all-posts">
+   <%= render 'posts' %>
+ </div>
 </div>

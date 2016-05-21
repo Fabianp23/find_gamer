@@ -50,6 +50,10 @@ $(document).on("ready page:load", ready);
      errorsArr.forEach(addError);
   });
 
+$("#game_id").chosen().change( function(event, data){
+   window.location.href = "/games/" + data.selected;
+   });
+
   function clearErrors(){
     $('.errors').remove();
   };

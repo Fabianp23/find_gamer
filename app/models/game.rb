@@ -7,6 +7,7 @@ class Game < ActiveRecord::Base
 
 	  def games_picture
 	    game = name.gsub(/[ ':]/, '-').downcase
+		  pvs1 =	"plants-vs-zombies-garden-warfare-2e561d33-2b92-408a-92f2-ec79ddcc6c2b"
 			diablo3 = "diablo-3-reaper-of-souls"
 			diablo3["3"]= "iii"
 	    codmw1 = "call-of-duty-modern-warfare"
@@ -32,6 +33,8 @@ class Game < ActiveRecord::Base
 	        game = ds3
 				elsif game == "diablo-3-reaper-of-souls"
 					game = diablo3
+				elsif game == "plants-vs-zombies-garden-warfare"
+					game = pvs1
 	      end
 
 	    page = HTTParty.get("https://www.igdb.com/games/#{game}").parsed_response
