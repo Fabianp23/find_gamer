@@ -56,11 +56,6 @@ function ready() {
     window.location.href = "/games/" + data.selected;
   });
 
-
-  $("#game_id").chosen().change( function(event, data){
-    window.location.href = "/games/" + data.selected;
-  });
-
   function clearErrors(){
     $('.errors').remove();
   };

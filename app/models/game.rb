@@ -5,6 +5,7 @@ class Game < ActiveRecord::Base
 		name
 	end
 
+### this finds the games pictures 
 	  def games_picture
 	    game = name.gsub(/[ ':]/, '-').downcase
 		  pvs1 =	"plants-vs-zombies-garden-warfare-2e561d33-2b92-408a-92f2-ec79ddcc6c2b"
@@ -43,5 +44,16 @@ class Game < ActiveRecord::Base
 	       url = "https:" + parse_page.css('.inline-block img')[0]['srcset']
 	      url =  url.split(',')[0]
 	   end
+
+		### this brings out the games descrption from the website
+		 def game_description
+			 game = name.gsub(/[ ':]/, '-').downcase
+
+			 page = HTTParty.get("https://www.igdb.com/games/#{game}").parsed_response
+					parse_page = Nokogiri::HTML(page)
+
+					 url = parse_page.css('.charlimit p').text
+			end
+
 
 end
