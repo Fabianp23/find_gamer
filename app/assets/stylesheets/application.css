@@ -194,8 +194,8 @@
     height: 24px;
     width: 200px;
     box-shadow: none;
-    background: -webkit-gradient(linear,0% 0,0% 00%,color-stop(0%,#FFFFFF),color-stop(0%,#FFFFFF),color-stop(0%,##FFFFFF),color-stop(0%,##FFFFFF));
-    background: -webkit-linear-gradient(##FFFFFF 0%,##FFFFFF 0%,##FFFFFF 0%,#FFFFFF 0%);
+    background: -webkit-gradient(linear,0% 0, 0% 00%, color-stop(0%, #FFFFFF),color-stop(0%, #FFFFFF), color-stop(0%, #FFFFFF),color-stop(0%, #FFFFFF));
+    background: -webkit-linear-gradient(#FFFFFF 0%, #FFFFFF 0%, #FFFFFF 0%, #FFFFFF 0%);
     background: -moz-linear-gradient(#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%);
     background: -o-linear-gradient(#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%);
     background: linear-gradient(#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%);
@@ -247,9 +247,8 @@
   }
 
   #submit-post:hover {
-	margin: 0px 0;
+	margin: 0px;
 	width: 200px;
-  height: 40;
   transition: all .5s;
   color: black;
   background-color: #F8AC00;
@@ -413,7 +412,6 @@
 }
 
   footer p {
-    position:bottom;
     background-color: white;
     width: 75%;
     height: 15px;
@@ -435,7 +433,7 @@
  }
 
 
- @media only screen and (max-device-width: 768px) {
+ /*@media only screen and (max-device-width: 768px) {
 
    html {
      height: 100%;
@@ -726,4 +724,4 @@
 
 
 
- }
+ }*/
