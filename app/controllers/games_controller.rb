@@ -9,7 +9,7 @@ class GamesController < ApplicationController
   private
 
   def set_game
-    @game = Game.find(params[:id])
+    @game = Game.find_by_name(params[:name].capitalize)
   end
 
 end
