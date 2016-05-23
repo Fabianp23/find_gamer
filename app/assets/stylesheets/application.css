@@ -88,14 +88,24 @@
   }
 
   .game-description {
-      margin-top: 10px;
-      width: 235px;
-      height: 335px;
-      color: #F8AC00;
-      border: black;
-      border-radius: 2px;
-
+    margin-top: 10px;
+    width: 235px;
+    height: 100%;
+    color: #2D2D2D;
+    border: black;
+    /*text-align: center;*/
+    line-height: 1.4em;
+    font-size: 1.2em;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+    padding-bottom: 15px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
   }
+
+  .game-description::first-letter {
+    font-weight: bold;
+    font-size: 1.2em;
+}
 
   #game-name {
     font-size: 2em;
@@ -224,32 +234,34 @@
     padding: 5px;
     padding-right: 10px;
     padding-left: 10px;
-    border: solid 1px #B7B7B7;
+    border: solid 1px #2D2D2D;
     font-weight: 400;
     font-size: 20px;
     height: 35px;
     color: #F8AC00;
     font-family: 'Montserrat', sans-serif;
     width: 200px;
-    border-radius: 2px;
-    box-shadow: 0px 0px 1px .02em #F8AC00;
+    border-radius: 0px;
+    /*box-shadow: 0px 0px 1px .02em #F8AC00;*/
+    background-color: white;
   }
+
   #submit-post:hover {
-	margin: 10px 0;
-	width: 210px;
+	margin: 0px 0;
+	width: 200px;
   height: 40;
   transition: all .5s;
-
+  color: black;
+  background-color: #F8AC00;
 }
 
   #divider2 {
     position: fixed;
     width: 1px;
-    height: 515px;
+    height: 535px;
     background-color: #2D2D2D;
     opacity: .75;
     margin-top: 10px;
-    margin-bottom: 0;
     position: fixed;
     margin-left: 280px;
   }
@@ -300,7 +312,6 @@
     padding-top: 5px;
     padding-left: 6px;
     padding-bottom: 9px;
-    box-shadow: 0px 0px 1px .02em #F8AC00;
     border-radius: 2px;
   }
 
@@ -378,6 +389,28 @@
     margin: 0px;
     text-align: center;
   }
+
+  .back-button {
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 75px;
+    letter-spacing: .05em;
+    text-decoration: none;
+  }
+
+  .back-button a {
+    text-decoration: none;
+    color: #F8AC00;
+    padding: 5px;
+    border: solid 1px black;
+    font-size: .9em;
+  }
+
+  .back-button a:hover {
+    transition: all .5s;
+    color: black;
+    background-color: #F8AC00;
+}
 
   footer p {
     position:bottom;
@@ -622,6 +655,7 @@
      border-radius: 2px;
      box-shadow: 0px 0px 1px .02em #F8AC00;
      width: 90%;
+
    }
 
    #divider2 {

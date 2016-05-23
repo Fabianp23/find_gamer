@@ -157,9 +157,8 @@ games_supported = [
 "Tom Clancy's Rainbow Six:Siege  1",
 "Assassins Creed Chronicles:India",
 "Hotline Miami 2:Wrong Number",
-"Assassin's Creed:Rogue",]
-
+"Assassin's Creed:Rogue"]
 
 games_supported.sort.each do |name|
- Game.create(name: name)
+ Game.find_or_create_by(name: name)
 end
