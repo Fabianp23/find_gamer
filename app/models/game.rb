@@ -52,6 +52,9 @@ class Game < ActiveRecord::Base
 					parse_page = Nokogiri::HTML(page)
 
 					 url = parse_page.css('.charlimit p').text
+					 if url.length > 300
+						 url.truncate(299)
+					 end
 			end
 
 

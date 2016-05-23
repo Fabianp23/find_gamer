@@ -39,7 +39,7 @@
      font-weight: 700;
      color: white;
      font-size: 2em;
-     margin-bottom: 35px;
+      margin-bottom: 35px;
    }
 
    #nav img {
@@ -267,7 +267,6 @@
 
   .all-posts {
     margin-left: 320px;
-    margin-bottom: 140px;
   }
 
   .new-post {
