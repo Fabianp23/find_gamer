@@ -100,6 +100,7 @@
     padding-bottom: 15px;
     font-family: 'Muli', sans-serif;
     font-weight: 300;
+    margin-bottom: 100px;
   }
 
   .game-description::first-letter {
@@ -247,15 +248,14 @@
   }
 
   #submit-post:hover {
-	margin: 0px;
-	width: 200px;
-  transition: all .5s;
-  color: black;
-  background-color: #F8AC00;
+    margin: 0px;
+    width: 200px;
+    transition: all .5s;
+    color: black;
+    background-color: #F8AC00;
 }
 
   #divider2 {
-    position: fixed;
     width: 1px;
     height: 535px;
     background-color: #2D2D2D;
@@ -276,7 +276,6 @@
     margin-top: 20px;
     margin-bottom: -10px;
     font-size: 12px;
-    /*background-color: green;*/
   }
 
   .all-posts .new-post {
@@ -391,7 +390,7 @@
 
   .back-button {
     text-align: center;
-    margin-top: 55px;
+    margin-top: 100px;
     margin-bottom: 75px;
     letter-spacing: .05em;
     text-decoration: none;

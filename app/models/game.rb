@@ -5,7 +5,6 @@ class Game < ActiveRecord::Base
 		name
 	end
 
-### this finds the games pictures 
 	  def games_picture
 	    game = name.gsub(/[ ':]/, '-').downcase
 		  pvs1 =	"plants-vs-zombies-garden-warfare-2e561d33-2b92-408a-92f2-ec79ddcc6c2b"
