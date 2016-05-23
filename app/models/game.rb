@@ -44,4 +44,18 @@ class Game < ActiveRecord::Base
 	      url =  url.split(',')[0]
 	   end
 
+		### this brings out the games descrption from the website
+		 def game_description
+			 game = name.gsub(/[ ':]/, '-').downcase
+
+			 page = HTTParty.get("https://www.igdb.com/games/#{game}").parsed_response
+					parse_page = Nokogiri::HTML(page)
+
+					 url = parse_page.css('.charlimit p').text
+					 if url.length > 300
+						 url.truncate(299)
+					 end
+			end
+
+
 end
