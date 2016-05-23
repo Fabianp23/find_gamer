@@ -1,4 +1,4 @@
-<div class="new-post">
+<div class="new-post" data-attribute="<%= post.id %>">
   <div id='post-left'>
     <div id='gamertag'><%= post.gamertag %></div>
     <div id='time-ago'><%= time_ago_in_words(post.created_at) %> ago</div>
