@@ -2,25 +2,20 @@
 <html>
 <head>
 	<title>Polyguin</title>
-		<%= stylesheet_link_tag 'splash', media: 'all', 'data-turbolinks-track' => true %>
+	<%= stylesheet_link_tag 'splash', media: 'all', 'data-turbolinks-track' => true %>
 	<%= javascript_include_tag 'splash', 'data-turbolinks-track' => true %>
 </head>
 <body class="splash">
 	<div>
 
 		<div class="cover">
-
-		 
-
-    <div class="cover-background">
-
-			<div class="hello"> 
-			<%= link_to (image_tag 'polyguin_logo.png') , posts_path %>
-			
-			<br>
-			Polyguin a place where gamers connect and play. 
-			 <br><h6>Find / Share / Create</h6>
-	
+			<div class="cover-background">
+				<div class="hello"> 
+					<%= link_to (image_tag 'polyguin_logo.png') , posts_path %>
+					<br>
+					Polyguin a place where gamers connect and play. 
+					<br>
+					<h6>Find / Share / Create</h6>
 				</div>
 			</div>
 		</div>

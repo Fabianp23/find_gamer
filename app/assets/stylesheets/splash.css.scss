@@ -1,70 +1,57 @@
-
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400');
-
-$nav-color: #ff0;
-
-body.splash {
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400);
+body {
   background: #000;
+}
 
-  a {color: $nav-color;}
+a {
+  color: #ff0;
+}
 
-  #nav {
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    align-items: center;
-    background-color: #2D2D2D;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: white;
-    font-size: 2em;
-    margin-bottom: 35px;
-  }
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
 
-  .cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    width: 100%;
-    height: 100%;
-    .hello {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #fff;
-      font-family: 'Roboto Slab', serif;
-      font-size: 24px;
-      line-height: 26px;
-      text-align: center;
-      span {
-        cursor: pointer;
-        text-decoration: underline;
-      }
-    }
-  }
+.cover .hello {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+}
+.cover .hi span {
+  cursor: pointer;
+  text-decoration: underline;
+}
 
-  .tv {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    .screen {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: 1;
-      margin: auto;
-      opacity: 0;
-      transition: opacity .5s;
-      & .active { opacity: 1; }
-    }
-  }
+.tv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.tv .screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  margin: auto;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.tv .screen.active {
+  opacity: 1;
 }
