@@ -436,11 +436,9 @@
 
 
   /*@media only screen and (max-device-width: 768px) {
-
     html {
       height: 100%;
     }
-
     body {
       margin: 0 auto 0 auto;
       width: 100%;
@@ -448,7 +446,6 @@
       font-weight: 400;
       height: 100%;
     }
-
     #nav {
       width: 100%;
       padding-top: 20px;
@@ -462,23 +459,19 @@
       font-size: 2em;
       margin-bottom: 35px;
     }
-
     #nav img {
       width: 300px;
     }
-
     #wrapper {
       margin-left: auto;
       margin-right: auto;
     }
-
     .new-form {
       width: 100%;
       color: black;
       font-size: 2em;
       position: static;
     }
-
     .new-form li {
       font-size: 1.1em;
       text-decoration: none;
@@ -487,11 +480,9 @@
       color: red;
       text-align: center;
     }
-
     .new-form li:last-of-type {
       margin-bottom: 35px;
     }
-
     .game-image img {
       margin-top: 10px;
       width: 50%;
@@ -499,7 +490,6 @@
       box-shadow: 0px 0px 1px .02em #F8AC00;
       border-radius: 2px;
     }
-
     #game-name {
       font-size: 2em;
       margin-top: 0px;
@@ -508,14 +498,12 @@
       padding-left: 0px;
       border-bottom: 2px solid black;
     }
-
     .form-lines {
       padding-top: 0px;
       padding-bottom: 0px;
       width: 100%;
       align-items: center;
     }
-
     .form-lines:first-of-type p {
       margin-top: 0px;
       font-size: 1.7em;
@@ -528,14 +516,12 @@
       text-align: center;
       margin-left: 27px;
     }
-
     .form-lines label {
       padding-left: 50px;
       width: 100%;
       margin-bottom: 15px;
       font-size: 1.3em;
     }
-
     .form-lines select {
       border: none;
       width: 90%;
@@ -549,7 +535,6 @@
       margin-bottom: 50px;
       margin-left: 27px;
     }
-
     .form-lines input {
       border: none;
       font-family: 'Muli', sans-serif;
@@ -563,7 +548,6 @@
       margin-left: 27px;
       font-size: 1.3em;
     }
-
     .form-lines textarea {
       border: none;
       font-family: 'Muli', sans-serif;
@@ -576,23 +560,18 @@
       margin-left: 27px;
       font-size: 16px;
     }
-
     #post_console {
       height: 75px;
     }
-
     #post_game_id {
       height: 75px;
     }
-
     #post_language {
       margin-top: 10px;
     }
-
     #post_microphone input {
       height: 1px;
     }
-
     .chosen-container-single .chosen-single {
       position: relative;
       display: block;
@@ -612,13 +591,11 @@
       background: linear-gradient(#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%,#FFFFFF 0%);
       margin-bottom: 15px;
     }
-
     .chosen-drop .chosen-results {
       color: #2D2D2D;
       background-color: white;
       font-size: 12px;
     }
-
     .chosen-container .chosen-drop {
       color: #2D2D2D;
       background-color: white;
@@ -626,17 +603,14 @@
       height: 280px;
       border-radius: 0px;
     }
-
     .chosen-results .active-result {
       color: #2D2D2D;
       font-size: 12px;
       padding: 1px;
     }
-
     #language-button label {
       margin-bottom: 5px;
     }
-
     #submit-post {
       background-color: #2D2D2D;
       color: #E5E5E5;
@@ -655,19 +629,15 @@
       border-radius: 2px;
       box-shadow: 0px 0px 1px .02em #F8AC00;
       width: 90%;
-
     }
-
     #divider2 {
       display: none;
     }
-
     .all-posts {
       margin-left: 0px;
       margin-bottom: 0px;
       display: none;
     }
-
     .new-post {
       color: black;
       height: 120px;
@@ -675,24 +645,19 @@
       margin-bottom: -10px;
       font-size: 1em;
     }
-
     .all-posts .new-post {
       border-bottom: .1em solid rgba(0, 0, 0, .15);
     }
-
     #post-left div {
       padding: 10px 0px 0px 10px;
     }
-
     #post-left div img {
       height: 30px;
       width: 30px;
     }
-
     .white-space {
       height: 10px;
     }
-
     .searcher {
       margin-left: 320px;
       margin-bottom: -10px;
@@ -705,20 +670,16 @@
       border-radius: 2px;
       display: none;
     }
-
     .searcher label {
       display: none;
     }
-
     .searcher .chosen-search {
       width: 200px;
       margin-right: 0px;
       padding-right: 0px;
     }
-
     .searcher .chosen-results {
       width: 200px;
       margin-right: 0px;
     }
-
 }*/
