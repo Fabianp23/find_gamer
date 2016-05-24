@@ -2,9 +2,9 @@ class GamesController < ApplicationController
    before_action :set_game, only: [:show]
 
 
-  # def index
-  #  render :layout => 'welcome'
-  # end
+  def index
+   render :layout => 'welcome'
+  end
   def show
     @posts = @game.posts
   end
