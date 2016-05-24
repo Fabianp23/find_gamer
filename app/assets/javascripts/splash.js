@@ -6,10 +6,10 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 var tv,
 		playerDefaults = {autoplay: 0, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 0, iv_load_policy: 3};
 var vid = [
-			{'videoId': '6rEYT2q_ExE', 'startSeconds': 0, 'endSeconds': 0, 'suggestedQuality': 'hd1080'},
-			{'videoId': '1Xwv8CV80j0', 'startSeconds': 0, 'endSeconds': 0, 'suggestedQuality': 'hd1080'},
-			{'videoId': 'p6-sPf_S5cY', 'startSeconds': 0, 'endSeconds': 0, 'suggestedQuality': 'hd1080'},
-			{'videoId': 'Z2BVe3vkvb0', 'startSeconds': 0, 'endSeconds': 0, 'suggestedQuality': 'hd1080'}
+			{'videoId': '6rEYT2q_ExE', 'startSeconds': 0, 'endSeconds': 30000, 'suggestedQuality': 'hd1080'},
+			{'videoId': '1Xwv8CV80j0', 'startSeconds': 0, 'endSeconds': 30000, 'suggestedQuality': 'hd1080'},
+			{'videoId': 'p6-sPf_S5cY', 'startSeconds': 0, 'endSeconds': 30000, 'suggestedQuality': 'hd1080'},
+			{'videoId': 'Z2BVe3vkvb0', 'startSeconds': 0, 'endSeconds': 30000, 'suggestedQuality': 'hd1080'}
 		],
 		randomvid = Math.floor(Math.random() * (vid.length - 1 + 1));
 
