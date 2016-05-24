@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'splash/index'
-
-  root "splash#index"
   resources :posts
   get 'games/:name' => 'games#show'
   resources :games
