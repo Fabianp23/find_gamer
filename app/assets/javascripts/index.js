@@ -2,7 +2,6 @@ $(document).on("ready page:load", ready);
 
 function ready() {
   highlightInputBox();
-
   $('#language-button :input').on('click', clearInput);
 
   function clearInput(){
@@ -85,6 +84,8 @@ function ready() {
   }
 
 }
+
+
 
 
 

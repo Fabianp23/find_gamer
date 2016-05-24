@@ -44,6 +44,7 @@
 
    #nav img {
      margin-top: 5px;
+     transition: 0.3s;
    }
 
   #wrapper {
@@ -58,7 +59,7 @@
     color: black;
     margin-top: -20px;
     float: left;
-    position: fixed;
+    position: static;
     font-size: 12px;
   }
   .new-form2 {
@@ -171,7 +172,13 @@
   #post_game_id {
     height: 24px;
   }
+  .psn_logo:hover{
+    content:url(bluepsn.png);
+  }
 
+  .xbox_logo:hover{
+    content:url(xboxgreen.png);
+  }
   .chosen-container-single .chosen-single {
     position: relative;
     display: block;
@@ -233,13 +240,16 @@
     width: 200px;
     border-radius: 2px;
     box-shadow: 0px 0px 1px .02em #F8AC00;
+    transition: 0.5s
   }
   #submit-post:hover {
 	margin: 10px 0;
 	width: 210px;
   height: 40;
-  transition: all .5s;
-
+  transition: 0.5s ease-in-out;
+  opacity: 5;
+  color: black;
+  background-color: #f8ac00;
 }
 
   #divider2 {
@@ -378,6 +388,7 @@
     margin: 0px;
     text-align: center;
   }
+
 
   footer p {
     position:bottom;

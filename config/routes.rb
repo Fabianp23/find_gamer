@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  # get 'games/index' => 'games#index'
+
   root "posts#index"
   resources :posts
   resources :games
