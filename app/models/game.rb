@@ -53,5 +53,5 @@ class Game < ActiveRecord::Base
 				 url.truncate(299)
 			 end
 		 end
-		 
+
 end
