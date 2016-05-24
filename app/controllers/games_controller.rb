@@ -9,7 +9,7 @@ class GamesController < ApplicationController
   private
 
   def set_game
-    @game = Game.find_by_name(params[:name])
+    @game = Game.find(params[:id])
   end
 
 end
