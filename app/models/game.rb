@@ -43,10 +43,12 @@ class Game < ActiveRecord::Base
       end
 
     page = HTTParty.get("https://www.igdb.com/games/#{game}").parsed_response
-       parse_page = Nokogiri::HTML(page)
+    parse_page = Nokogiri::HTML(page)
 
-       url = "https:" + parse_page.css('.inline-block img')[0]['srcset']
-      url =  url.split(',')[0]
+    return false if parse_page.css('.inline-block').empty?
+    
+    url = "https:" + parse_page.css('.inline-block img')[0]['srcset']
+    url =  url.split(',')[0]
   end
 
     ### this brings out the games descrption from the website
