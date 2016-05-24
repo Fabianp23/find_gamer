@@ -24,10 +24,12 @@
 
   <%= yield %>
 
+  <div class="back-button">
+    <%= link_to "HOME", root_path %>
+  </div>
+
 <footer>
-  <span class="back-button"><%= link_to "Home", root_path %> |</span>
-  <span> polyguin@gmail.com |</span>
-  <span> © 2016 polyguin.com</span>
+  <p>© 2016 polyguin.com</p>
 </footer>
 
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>

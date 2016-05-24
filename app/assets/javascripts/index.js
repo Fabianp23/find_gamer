@@ -65,28 +65,41 @@ function ready() {
     return $.ajax({
       url: 'posts',
       success: function (div) {
+        // console.log(div);
         $('.all-posts').html(div);
-        $($('.new-post').get().reverse()).each(function(idx, post) {
-          var p = $(post);
-          var id = p.data('id');
-          if (id > window.most_recent_post_id) {
-            $(post).effect("highlight", {color:"#2D2D2D"}, 750);
-            window.most_recent_post_id = id;
-          }
-        });
+        // highlightPost();
       }
     });
   }
 
-  window.most_recent_post_id = 0;
-  if ($('.new-post')) {
-    $('.new-post').each(function(idx, post) {
-      window.most_recent_post_id = Math.max(window.most_recent_post_id, $(post).data('id'));
-    });
-  }
+  // function highlightPost() {
+  //   $(".new-post:first").effect("highlight", {color:"#2D2D2D"}, 1000);
+  // };
 
+  console.log(window.intervalId);
   if (window.intervalId === undefined) {
-    window.intervalId = setInterval(getAllPosts, 5000);
+    window.intervalId = setInterval(getAllPosts, 10000);
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//

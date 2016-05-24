@@ -58,7 +58,7 @@
     color: black;
     margin-top: -20px;
     float: left;
-    position: static;
+    position: fixed;
     font-size: 12px;
   }
   .new-form2 {
@@ -232,8 +232,10 @@
     color: #E5E5E5;
     border: none;
     text-decoration: none;
+    padding: 5px;
     padding-right: 10px;
-    /*border: solid 1px #2D2D2D;*/
+    padding-left: 10px;
+    border: solid 1px #2D2D2D;
     font-weight: 400;
     font-size: 20px;
     height: 35px;
@@ -243,7 +245,6 @@
     border-radius: 0px;
     /*box-shadow: 0px 0px 1px .02em #F8AC00;*/
     background-color: white;
-    text-align: left;
   }
 
   #submit-post:hover {
@@ -386,44 +387,19 @@
     text-align: center;
   }
 
-  footer {
-    width: 75%;
-    height: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    color: #F8AC00;
-    font-size: 12px;
-    margin-bottom: 100px;
-    position: fixed;
-    bottom: 0px;
-    margin-bottom: 0px;
-    border-top: solid 0.5px rgba(0, 0, 0, .15);
-    margin-left: 12.5%;
-    margin-right: 12.5%;
-    text-align: right;
-  }
-
-  footer p:first-of-type {
-    color: #F8AC00;
-    font-size: 1em;
-    bottom: 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    width: 150px;
-    margin-right: 0px;
-
-  }
-
   .back-button {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 75px;
     letter-spacing: .05em;
     text-decoration: none;
-
   }
 
   .back-button a {
     text-decoration: none;
     color: #F8AC00;
     padding: 5px;
+    border: solid 1px black;
     font-size: .9em;
   }
 
@@ -432,6 +408,27 @@
     color: black;
     background-color: #F8AC00;
 }
+
+  footer p {
+    background-color: white;
+    width: 75%;
+    height: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #F8AC00;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 100px;
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: 0px;
+    border-top: solid 0.5px rgba(0, 0, 0, .15);
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+
+ }
 
 
  /*@media only screen and (max-device-width: 768px) {
