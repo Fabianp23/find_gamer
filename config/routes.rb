@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   root "splash#index"
   resources :posts
-  get 'games/:name' => 'games#show'
+  get 'games/:id' => 'games#show'
   resources :games
 
   # The priority is based upon order of creation: first created -> highest priority.
