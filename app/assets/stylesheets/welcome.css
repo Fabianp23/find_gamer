@@ -1,7 +1,49 @@
-.logo{
-  position:absolute;
-  z-index:1;
-  top: 50%;
-  text-align: center;
-  left: 50%;
+@media only screen and (min-width: 960px) {
+
+  .splash-logo {
+    position:absolute;
+    z-index:1;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+  }
+
+  .splash-logo img {
+    width: 450px;
+    height: 90px;
+  }
+
+  .jump-in {
+    border: 1px solid #F8AC00;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-family: 'Muli', sans-serif;
+    font-weight: 300;
+    width: 200px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 115px;
+  }
+
+  .jump-in a {
+    color: #F8AC00;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+
+  .jump-in:hover {
+    transition: all .5s;
+    color: black;
+    background-color: #F8AC00;
+    color: #2D2D2D;
+    border: 1px solid #2D2D2D;
+ }
+
+  .jump-in a:hover {
+    color: #2D2D2D;
+    font-family: 'Montserrat', sans-serif;
+  }
+
 }
