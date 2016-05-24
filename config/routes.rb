@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'splash/index'
+  get 'posts/index'
 
   root "splash#index"
   resources :posts
