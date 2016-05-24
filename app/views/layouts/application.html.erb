@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Guiner | Connecting Gamers</title>
+  <title>Polyguin | Connecting Gamers</title>
   <%= favicon_link_tag 'favicon.ico' %>
   <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -24,9 +24,10 @@
 
   <%= yield %>
 
-
 <footer>
-  <p>© 2016 polyguin.com</p>
+  <span class="back-button"><%= link_to "Home", root_path %> |</span>
+  <span> polyguin@gmail.com |</span>
+  <span> © 2016 polyguin.com</span>
 </footer>
 
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>

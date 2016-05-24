@@ -120,5 +120,5 @@ games_supported = [
 
 
 games_supported.sort.each do |name|
- Game.create(name: name)
+  Game.find_or_create_by(name: name)
 end

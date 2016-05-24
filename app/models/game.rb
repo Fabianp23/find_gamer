@@ -38,10 +38,20 @@ class Game < ActiveRecord::Base
 	      end
 
 	    page = HTTParty.get("https://www.igdb.com/games/#{game}").parsed_response
-	       parse_page = Nokogiri::HTML(page)
-
-	       url = "https:" + parse_page.css('.inline-block img')[0]['srcset']
-	      url =  url.split(',')[0]
+	    parse_page = Nokogiri::HTML(page)
+	    url = "https:" + parse_page.css('.inline-block img')[0]['srcset']
+	    url =  url.split(',')[0]
 	   end
 
+		#this brings out a game's descrption from the website
+		 def game_description
+			 game = name.gsub(/[ ':]/, '-').downcase
+			 page = HTTParty.get("https://www.igdb.com/games/#{game}").parsed_response
+			 parse_page = Nokogiri::HTML(page)
+			 url = parse_page.css('.charlimit p').text
+			 if url.length > 300
+				 url.truncate(299)
+			 end
+		 end
+		 
 end
