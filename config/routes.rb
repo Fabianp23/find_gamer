@@ -1,12 +1,15 @@
 Rails.application.routes.draw do
 
+<<<<<<< HEAD
   get 'games/index' => 'games#index'
+=======
+>>>>>>> 22dde51e77821aa812ee213ed7af68b127315d3e
 
   root "posts#index"
   resources :posts
+  get 'games/:name' => 'games#show'
   resources :games
 
-  get 'games/show'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

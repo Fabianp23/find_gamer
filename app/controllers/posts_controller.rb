@@ -1,6 +1,5 @@
 class PostsController < ApplicationController
 
-
   def index
     @posts = Post.all.limit(25)
     @post = Post.new
