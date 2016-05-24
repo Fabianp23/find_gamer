@@ -16,9 +16,7 @@
 
  @media only screen and (min-width: 450px) {
 
-   html {
-     height: 100%;
-   }
+   html { height: 100%;}
 
    body {
      margin: 0 auto 0 auto;
@@ -106,7 +104,7 @@
   .game-description::first-letter {
     font-weight: bold;
     font-size: 1.2em;
-}
+  }
 
   #game-name {
     font-size: 2em;
@@ -252,7 +250,7 @@
     transition: all .5s;
     color: black;
     background-color: #F8AC00;
-}
+  }
 
   #divider2 {
     width: 1px;
@@ -431,8 +429,9 @@
     transition: all .5s;
     color: black;
     background-color: #F8AC00;
-}
+  }
 
+}
 
  /*@media only screen and (max-device-width: 768px) {
 
