@@ -254,6 +254,14 @@
     background-color: #F8AC00;
   }
 
+  .psn_logo:hover {
+    content: url(bluepsn.png);
+  }
+
+  .xbox_logo:hover {
+    content: url(xboxgreen.png);
+  }
+
   #divider2 {
     width: 1px;
     height: 535px;
