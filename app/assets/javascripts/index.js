@@ -1,12 +1,12 @@
 $(document).on("ready page:load", ready);
 
-function ready() {
-  highlightInputBox();
-  $('#language-button :input').on('click', clearInput);
+  function ready() {
+    highlightInputBox();
+    $('#language-button :input').on('click', clearInput);
 
-  function clearInput(){
-    $('#language-button :input').val("");
-  };
+    function clearInput(){
+      $('#language-button :input').val("");
+    };
 
   function highlightInputBox() {
     $('.new-form :input').on('click', function() {
