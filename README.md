@@ -1,4 +1,5 @@
-#*polyguin*
+#[*polyguin*](www.polyguin.com)  
+
 ##*connecting gamers*
 
 A Web application built on the Ruby On Rails framework that allows gamers to connect and play with each other.
