@@ -15,15 +15,15 @@ A Web application built on the Ruby On Rails framework that allows gamers to con
 
 ###*features*
 1. Create Posts
-* Console
-* Gamertag
-* Game
-* Activity Description
-* Language
-* Description
+ * Console
+ * Gamertag
+ * Game
+ * Activity Description
+ * Language
+ * Description
 2. Gamertag Validation
-* Xbox (xbox unofficial API)
-* PSN (web scrapping)
+ * Xbox (xbox unofficial API)
+ * PSN (web scrapping)
 3. Dynamic Video Game specific web pages (web scraping)
 4. Web to Console Messaging for Xbox One (re-direct)
 5. Dynamic Splash Page
