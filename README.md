@@ -1,4 +1,4 @@
-#[*polyguin*](www.polyguin.com)  
+#[*polyguin*](http://www.polyguin.com)  
 
 ##*connecting gamers*
 
